@@ -1,10 +1,11 @@
 .wrapper {
   border: darkslategrey 0.5px solid;
   height: 100vh;
-  width: auto;
+  width: 75vw;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   margin-top: 5%;
+
 }
 
 .wrapper h1 {

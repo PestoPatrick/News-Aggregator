@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './app.scss'
+import {Article} from "../articles/article";
 
 export class App extends React.Component {
     render() {
         return (
             <div className="wrapper">
-            <h1>hello</h1>
+            <Article />
             </div>
 
             /* how to dynamically render components
