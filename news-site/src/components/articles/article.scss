@@ -1,16 +1,46 @@
+// width ratio for 16:9 rectangle aspect ratio
+$ratio : 56.25%;
+
 .base {
-  height: 240px;
-  width: auto;
-  min-width: 330px;
-  //max-width: 500px;
+  height: 25%;
+  min-height: 40px;
+  max-height: 575px;
+  width: 56.25%;
+  min-width: 56.25%;
+  max-width: 56.25%;
   margin-top: 5%;
   margin-right: 5%;
   margin-left: 5%;
-
   border-radius: 15px;
-  background-color: blue;
-  position: absolute;
+  background-color: #F8F8F8;
+  position: relative;
+  box-shadow: 0 10px 15px darkslategrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+img {
+  height: 25%;
+  width: $ratio;
+  position: relative;
+  min-width: 10px;
+  min-height: 10px;
+  margin: 5px;
+}
 
+.articleText {
+  min-height: auto;
+  min-width: $ratio;
+  text-align: center;
+  margin-left: 1px;
+  max-width: 300px;
+  width:auto;
+  font-size: 14px;
+}
+
+.articleText p {
 
 }
+
+
