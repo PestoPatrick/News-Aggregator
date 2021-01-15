@@ -39,8 +39,26 @@ img {
   font-size: 14px;
 }
 
-.articleText p {
+Card {
+  display: flex;
+}
 
+CardContent {
+  flex: 1 1 auto;
+}
+
+cardroot {
+  display: flex;
+}
+details {
+  display: flex;
+  flexDirection: column;
+}
+content {
+  flex: 1 0 auto;
+}
+cover {
+  width: 1510px;
 }
 
 
