@@ -6,25 +6,26 @@ import {Card, CardContent, CardMedia, IconButton, Typography} from "@material-ui
 export class Article extends React.Component {
     render() {
         return (
+            <div>
 
-        <Card className="cardroot">
-            <div className="details">
-                <CardContent className="content">
-                    <Typography component="h5" variant="h5">
-                        Live From Space aaaaaaaaaaaaaaaaaaaaaa
-                    </Typography>
-                    <Typography variant="subtitle1" color="textSecondary">
-                        Mac Miller
-                    </Typography>
-                </CardContent>
+                <Card className="cardroot">
+                    <div className="details">
+                        <CardContent className="content">
+                            <Typography component="h5" variant="h5" className="Title">
+                                Live From Space aaaaaaaaaaaaaaaaaaaaaa
+                            </Typography>
+                            <Typography variant="subtitle1" color="textSecondary" className="Description">
+                                Mac Miller
+                            </Typography>
+                        </CardContent>
+                    </div>
+                    <CardMedia
+                        className="cover"
+                        image="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
+                        title="Live from space album cover"
+                    />
+                </Card>
             </div>
-            <CardMedia
-                className="cover"
-                image="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
-                title="Live from space album cover"
-            />
-        </Card>
-
 
             // <div className="base">
             //     <img alt="" />

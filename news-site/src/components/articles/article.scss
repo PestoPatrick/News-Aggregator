@@ -1,64 +1,35 @@
 // width ratio for 16:9 rectangle aspect ratio
 $ratio : 56.25%;
 
-.base {
-  height: 25%;
-  min-height: 40px;
-  max-height: 575px;
-  width: 56.25%;
-  min-width: 56.25%;
-  max-width: 56.25%;
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-left: 5%;
-  border-radius: 15px;
-  background-color: #F8F8F8;
-  position: relative;
-  box-shadow: 0 10px 15px darkslategrey;
+/*try using the paper container and then grid from material ui to make responsive for all sizes as doing it for
+Iphone SE is being tricky as it is so small*/
+
+.cardroot {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin-top:25px;
+  min-width: border-box;
 }
 
-img {
-  height: 25%;
-  width: $ratio;
-  position: relative;
-  min-width: 10px;
-  min-height: 10px;
-  margin: 5px;
-}
-
-.articleText {
-  min-height: auto;
-  min-width: $ratio;
-  text-align: center;
-  margin-left: 1px;
-  max-width: 300px;
-  width:auto;
-  font-size: 14px;
-}
-
-Card {
-  display: flex;
-}
-
-CardContent {
-  flex: 1 1 auto;
-}
-
-cardroot {
-  display: flex;
-}
-details {
+.details {
   display: flex;
   flexDirection: column;
 }
-content {
+.content {
   flex: 1 0 auto;
+  text-wrap: avoid;
+
+
 }
-cover {
-  width: 1510px;
+.cover {
+  background-color: black;
+  width: 150px;
+  height: 100px;
+  min-width: 50px;
+  min-height: 50px;
+  display: inline-block; /* makes it fit in like an <img> */
+  background-size: cover; /* or contain */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 
