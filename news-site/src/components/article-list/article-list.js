@@ -2,10 +2,22 @@ import React from 'react'
 import './article-list.scss'
 import {Article} from "../articles/article";
 
+
 export class ArticleList extends React.Component {
+
+    componentDidMount() {
+        const apikey = 'https://newsapi.org/v2/everything&apiKey=1bb5eaf19afb4fdbaf06ca6028ab6355';
+        fetch(apikey)
+            .then((response) => response.json())
+            .then((data) => console.log('This is your data', data));
+    }
+
     render() {
         return (
+            <div>
             <Article/>
+            <h1>Check the console</h1>
+            </div>
         )
     }
 }

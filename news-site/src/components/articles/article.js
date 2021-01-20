@@ -1,31 +1,28 @@
 import React from 'react'
 import './article.scss'
-import {Card, CardContent, CardMedia, IconButton, Typography} from "@material-ui/core";
+import {Paper, Grid} from "@material-ui/core";
 
 
 export class Article extends React.Component {
     render() {
         return (
-            <div>
+            <div></div>
+            // <div>
+            //     <Paper elevation={5} className="ArticleCard">
+            //         <Grid spacing={2} container className="Container">
+            //             <Grid item xs={6} className="Text">
+            //                 <h4>Helllllllloooooooo</h4>
+            //             </Grid>
+            //             <Grid item xs={6} className="Thumbnail">
+            //                 <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" alt="baby yoda"/>
+            //             </Grid>
+            //         </Grid>
+            //     </Paper>
+            // </div>
 
-                <Card className="cardroot">
-                    <div className="details">
-                        <CardContent className="content">
-                            <Typography component="h5" variant="h5" className="Title">
-                                Live From Space aaaaaaaaaaaaaaaaaaaaaa
-                            </Typography>
-                            <Typography variant="subtitle1" color="textSecondary" className="Description">
-                                Mac Miller
-                            </Typography>
-                        </CardContent>
-                    </div>
-                    <CardMedia
-                        className="cover"
-                        image="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
-                        title="Live from space album cover"
-                    />
-                </Card>
-            </div>
+
+
+            // test image to use "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
 
             // <div className="base">
             //     <img alt="" />

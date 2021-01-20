@@ -4,10 +4,10 @@ $ratio : 56.25%;
 /*try using the paper container and then grid from material ui to make responsive for all sizes as doing it for
 Iphone SE is being tricky as it is so small*/
 
-.cardroot {
+.ArticleCard {
   display: flex;
   margin-top:25px;
-  min-width: border-box;
+  min-width: 300px;
 }
 
 .details {
@@ -20,12 +20,12 @@ Iphone SE is being tricky as it is so small*/
 
 
 }
-.cover {
+img {
   background-color: black;
   width: 150px;
   height: 100px;
   min-width: 50px;
-  min-height: 50px;
+  min-height: 35px;
   display: inline-block; /* makes it fit in like an <img> */
   background-size: cover; /* or contain */
   background-position: center center;
